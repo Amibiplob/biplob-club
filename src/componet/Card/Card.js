@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Card.css'
+import { breakTime } from '../Profile/Profile';
 const Card = () => {
     const [fakeDB ,setFakeDB] = useState([]);
     useEffect(() => {
@@ -9,14 +10,13 @@ const Card = () => {
     },[])
  //   console.log(fakeDB)
  const playingTime =(time) =>{
-    playingTime(time)
- }
-               
+   breakTime(time);
+ }            
   return (
        <div className='card'>
         {
         fakeDB.map(data =>(
-            <div className='card-data'>
+            <div className='card-data' key={data.id}>
             <img src={data.picture} alt="" />
             <h3>{data.name}</h3>
             <p className='about'>About : {data.about.slice(0,50)}</p>
