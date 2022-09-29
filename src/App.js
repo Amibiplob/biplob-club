@@ -5,9 +5,11 @@ import Question from './componet/Question/Question';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <div className="App">
       <Main></Main>
       <Profile></Profile>
+    </div>
       <Question></Question>
     </div>
   );
