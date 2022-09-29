@@ -3,30 +3,35 @@ import './Profile.css'
 const Profile = () => {
     return (
         <div className='profile'>
-            <div className='name'>
-                <img src="https://amibiplob.github.io/img/mypic%20(3).jpg" alt="" />
-                <h1>Biplob</h1>
+            <div className='profile-details'>
+               <div>
+               <img src="https://amibiplob.github.io/img/mypic%20(3).jpg" alt="" />
+               </div>
+               <div>
+                 <h3>Biplob</h3>
+                <p>Tangail</p>
+               </div>
             </div>
-            <h1>Add A Break</h1>
+            <h2>Add A Break</h2>
             <div className='break'>
-                <p>10</p>
-                <p>20</p>
-                <p>30</p>
-                <p>40</p>
-                <p>50</p>
+                <button className='break-btn'>10</button>
+                <button className='break-btn'>20</button>
+                <button className='break-btn'>30</button>
+                <button className='break-btn'>40</button>
+                <button className='break-btn'>50</button>
             </div>
-            <h1>Exercise Details</h1>
+            <h2>Exercise Details</h2>
             <div className='details'>
-                <h1>
+                <h3>
                 Exercise time
-                </h1>
-                <h1>2000sec</h1>
+                </h3>
+                <h3>2000sec</h3>
             </div>
             <div className='details'>
-                <h1>
+                <h3>
                 Break time
-                </h1>
-                <h1>2000sec</h1>
+                </h3>
+                <h3>2000sec</h3>
             </div>
             <button className='btn-complet'>Activity Completed</button>
         </div>
