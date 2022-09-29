@@ -1,12 +1,18 @@
 .card{
     display: grid;
-    grid-template-columns: repeat(1fr);
-    background-color: rgb(160, 175, 175);
-    padding: 20px;
+    grid-template-columns: repeat(3 , 1fr);
+ 
+   gap: 30px;
     border-radius: 10px;
 }
+.card-data{
+   border: 1px solid red;
+   border-radius: 20px;
+   background-color: rgba(160, 175, 175, 0.775);
+   padding: 20px;
+}
 .card img{
-    width: 300px;
+    width: 200px;
 }
 .btn-add{
     background-color: darkblue;
