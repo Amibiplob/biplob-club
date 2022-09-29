@@ -18,7 +18,9 @@
     object-fit: cover;
     border-radius: 10px;
 }
-
+.card-data span{
+    font-weight: 600;
+}
 .btn-add {
     background-color: darkblue;
     color: white;
@@ -26,6 +28,7 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
+    font-size: 16px;
 }
 
 .btn-add:hover {
@@ -42,5 +45,8 @@
 
     .card-data img {
         height: 100px;
+    }
+    .about{
+        display: none;
     }
 }

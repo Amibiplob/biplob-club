@@ -8,7 +8,9 @@ const Card = () => {
         .then(data => setFakeDB(data))
     },[])
  //   console.log(fakeDB)
-    
+ const playingTime =(time) =>{
+    playingTime(time)
+ }
                
   return (
        <div className='card'>
@@ -17,10 +19,10 @@ const Card = () => {
             <div className='card-data'>
             <img src={data.picture} alt="" />
             <h3>{data.name}</h3>
-            <p>About : {data.about.slice(0,50)}</p>
-            <p>Age : {data.age}</p>
-            <p>Time : {data.time}m</p>
-            <button className='btn-add'>button</button>
+            <p className='about'>About : {data.about.slice(0,50)}</p>
+            <p><span>For Age : </span>{data.age}</p>
+            <p><span>Time :</span> {data.time}m</p>
+            <button className='btn-add' onClick={() =>playingTime(data.time)}>Add to list</button>
         </div>
         ))
        }
