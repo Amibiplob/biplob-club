@@ -1,12 +1,13 @@
 import React from 'react';
 import Card from '../Card/Card';
 import "./Main.css"
-const Main = () => {
+const Main = ({ handleTime }) => {
+    // console.log( handleTime)
     return (
         <div className='main'>
             <h1 className='title'>BIPLOB-CLUB</h1>
             <p>Select Your Item</p>
-            <Card></Card>
+            <Card handleTime={handleTime}></Card>
         </div>
     );
 };
