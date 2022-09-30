@@ -8,8 +8,7 @@ const Card = ({ handleTime }) => {
             .then(data => setFakeDB(data))
     }, [])
     //   console.log(fakeDB)
-    //const [playingTime , setPlayingTime] = useState([]);
-    console.log(typeof (handleTime))
+  //  console.log(handleTime)
     return (
         <div className='card'>
             {
@@ -17,9 +16,9 @@ const Card = ({ handleTime }) => {
                     <div className='card-data' key={data.id}>
                         <img src={data.picture} alt="" />
                         <h3>{data.name}</h3>
-                        <p className='about'>About : {data.about.slice(0, 50)}</p>
-                        <p><span>For Age : </span>{data.age}</p>
-                        <p><span>Time :</span> {data.time}m</p>
+                        <p className='about'><span className='about-item'>About : </span>{data.about.slice(0, 50)}</p>
+                        <p><span className='about-item'>For Age : </span>{data.age}</p>
+                        <p><span className='about-item'>Time :</span> {data.time}m</p>
                         <button className='btn-add' onClick={() => handleTime((current) => current + data.time)}>Add to list</button>
                     </div>
                 ))

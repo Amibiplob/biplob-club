@@ -1,6 +1,10 @@
 .main{
     margin-right: 30px;
 }
-.title{
+.title h1{
     color: darkcyan;
+}
+.title p {
+    font-weight: 600;
+
 }

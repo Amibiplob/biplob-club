@@ -5,8 +5,11 @@ const Main = ({ handleTime }) => {
     // console.log( handleTime)
     return (
         <div className='main'>
-            <h1 className='title'>BIPLOB-CLUB</h1>
+            <div className='title'>
+            <h1>BIPLOB-CLUB</h1>
             <p>Select Your Item</p>
+
+            </div>
             <Card handleTime={handleTime}></Card>
         </div>
     );

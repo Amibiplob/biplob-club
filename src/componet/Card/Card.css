@@ -17,7 +17,7 @@
     object-fit: cover;
     border-radius: 10px;
 }
-.card-data span{
+.about-item{
     font-weight: 600;
 }
 .btn-add {
@@ -39,13 +39,17 @@
 @media only screen and (max-width: 768px) {
     .card {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
     }
 
     .card-data img {
-        height: 100px;
+        height: 200px;
     }
     .about{
         display: none;
+    }
+    .card-data {
+        padding: 10px;
     }
 }

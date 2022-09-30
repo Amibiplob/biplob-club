@@ -4,9 +4,8 @@ import Main from './componet/Main/Main';
 import Profile from './componet/Profile/Profile';
 import Question from './componet/Question/Question';
 
-
 function App() {
-  const [playingTime, setPlayingTime] = useState([]);
+  const [playingTime, setPlayingTime] = useState(0);
   const handleTime = (time) => {
     setPlayingTime(time)
   }
